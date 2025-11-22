@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CrowdSense – Map</title>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div id="app">
+    <div id="map"></div>
+    <div id="panel">
+      <h2 id="title">Select a location</h2>
+      <p id="details">Click any marker on the map to view crowd details.</p>
+      <canvas id="historyChart" width="300" height="100"></canvas>
+      <div id="controls">
+        <input id="wifiCount" type="number" placeholder="WiFi devices">
+        <button id="updateWifi">Update WiFi</button><br><br>
+        <input id="manualCount" type="number" placeholder="Manual density">
+        <button id="manualReport">Submit Manual</button><br><br>
+        <button id="checkin">User Check-In</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

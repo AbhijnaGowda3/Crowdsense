@@ -1,0 +1,84 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+#app {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+#map {
+  flex: 2;
+}
+
+/* --- IMPROVED LEFT PANEL --- */
+#panel {
+  flex: 1;
+  padding: 16px;
+  background-color: #ffffff;
+  overflow-y: auto;
+  border-left: 1px solid #ddd;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.05);
+  border-radius: 0;
+}
+
+/* Make panel title look better */
+#panel h2 {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+/* Individual location card */
+.location-item {
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  background: #f8f9fa;
+  border-left: 4px solid #007bff;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.location-item:hover {
+  background: #eef4ff;
+  transform: translateX(3px);
+}
+
+/* Name inside each card */
+.location-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+/* Details text inside each card */
+.location-details {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Chart border */
+#historyChart {
+  border: 1px solid #ddd;
+  margin-top: 8px;
+}
+
+#controls input {
+  width: 120px;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  border:1px solid green 
+}
+
+#controls button {
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+
+
